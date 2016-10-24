@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,7 +45,10 @@
 				CAED32A81DBE719600C2E10B /* QuizApp */,
 				CAED32A71DBE719600C2E10B /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		CAED32A71DBE719600C2E10B /* Products */ = {
 			isa = PBXGroup;
@@ -115,7 +118,7 @@
 				};
 			};
 			buildConfigurationList = CAED32A11DBE719500C2E10B /* Build configuration list for PBXProject "QuizApp" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
