@@ -35,12 +35,23 @@
     self.questionLabel.text = self.questions[self.currentIndex];
 }
 
+- (void) viewWillAppear: (BOOL) animated {
+  [super viewWillAppear: animated];
+  _questionLabel.alpha = 0.0;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void) animateLabelTransitions {
+  [UIView animateWithDuration: 0.5 animations:^{
+    _questionLabel.alpha = 1.0;
+  }];
+}
+
+#pragma mark - Actions
 - (IBAction)showNextQuestion: (UIButton *)sender {
   self.currentIndex++;
   
@@ -50,6 +61,8 @@
   
   self.questionLabel.text = self.questions[self.currentIndex];
   self.answerLabel.text = @"???";
+  
+  [self animateLabelTransitions];
 }
 
 - (IBAction)showAnswer:(UIButton *)sender {
